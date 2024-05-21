@@ -21,6 +21,8 @@ Why we select this variable? Because we find that current turbulence models (lik
 
 Having said all that, this project propose a new FIML method, chose S-A one-equation turbulence model,use design variables as a correction to the containing production term, combine field inversion and machine learning together with selected variables as connections between, and the predicted beta(design variables) is used in the next interation of field inversion. So it is expected to have lower cost compared with Direct(which aims to find links directly between beta and neural network's weight, may lead to higher cost of computation) and higher accuracy compared with Classic(which has lowest accuracy among). And with Liutex scalar considerd, it is also expected to have better performance in large separation flow area.
 
+At the same time, we seek to try best to introduce this project in double language, both in English and Chinese, aiming to bring SU2 for domestic reseachers with easier reading and comprehensing experience, inspiring fellows to be more creative with such open source CFD application.
+
 Obviously, many further works need to bo done, and many problems may spring out due to poor personal capacity and limited research time. So we are open to any advice and critical comments, if time permit, further updates will be on the way!
 
 Finally, many thanks to all SU2 developers and Prof.J.Holland, and so to my respected teacher Gao! It's my pleasure to have such a chance cooperating and working with your excellent researchers!
@@ -46,6 +48,8 @@ J.Holland教授已经开发了基于SU2的经典型和直接型两种FIML方法�
 为什么我们选择这个变量？因为我们发现，当前的湍流模型（如S-A模型，这是J.Holland旨在修复的原始模型，他称之为“SA_FIML”）在存在大分离流动现象的区域具有比较糟糕的预测能力。这些区域往往具有大量的涡旋状结构，liutex方法可以精确地将涡旋的刚性旋转部分与其他部分区分开来，而代表涡旋本质的刚性旋转部分称为Liutex张量。但是为了得到这个张量，坐标旋转的两步是不可避免的，考虑到伽利略不变性，我们选择了衡量其大小的 liutex 标量，就像速度矢量有方向，但速度大小没有。
 
 综上所述，本项目提出了一种新的FIML方法，选择了S-A单方程湍流模型，使用设计变量作为对S-A模型所含生成项（production）的修正，将流场反演和机器学习结合在一起，并将选定的变量作为连接，并将预测的beta（设计变量）用于下一轮流场反演的迭代。因此，与Direct（旨在找到beta和神经网络权重之间的直接联系，可能导致更高的计算成本）相比，它的成本更低，与Classic（其中精度最低）相比，它的精度更高。又因为考虑到Liutex标量，预计这种方法在大分离流区域也具有更好的性能。
+
+与此同时，我们将竭尽全力以中英文双语的形式介绍本项目，力求给读者们更简单轻松的阅读体验，从而将SU2介绍给国内的同行们，为大家介绍一个能充分发挥各位创造性的CFD开源软件。
 
 显然，还有很多工作要做，由于个人能力不足和研究时间有限，可能会出现许多问题。因此，我们愿意接受任何建议和批评意见，如果时间允许，我们将进行进一步的更新！
 
